@@ -245,3 +245,7 @@ app_license = "agpl-3.0"
 doctype_js = {
     "Task": "public/js/task_overrides.js",
 }
+
+override_whitelisted_methods = {
+    "frappe.desk.calendar.get_events": "project_extras.calendar.get_events"
+}
